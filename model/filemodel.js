@@ -1,17 +1,15 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const fileSchema = new mongoose.Schema({
-    name: {
-      type: String,
-      // required: [true, 'A tour must have name'] ,
-     
-    }, 
-    path: {
-      type: String,
-     
-    },
-  })
-  
-  const File = mongoose.model('File', fileSchema)
+  name: {
+    type: String,
+    // required: [true, 'A tour must have name'] ,
+  },
+  path: {
+    type: String,
+  },
+});
 
-  export default File
+const File = mongoose.model("File", fileSchema);
+
+export default File;
